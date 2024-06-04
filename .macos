@@ -159,7 +159,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en-US" "ja-JP"
+defaults write NSGlobalDomain AppleLanguages -array "en-JP" "ja-JP"
 defaults write NSGlobalDomain AppleLocale -string "en_JP"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
