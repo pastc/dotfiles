@@ -2,11 +2,6 @@
 
 echo "Setting up your Mac..."
 
-# Check for Starship and install if we don't have it
-if test ! $(which starship); then
-  /bin/sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-fi
-
 # Check for pnpm and install if we don't have it
 if test ! $(which pnpm); then
   /bin/sh -c "$(curl -fsSL https://get.pnpm.io/install.sh)"

@@ -16,6 +16,9 @@ brew 'jq' # Used for spatie/visit
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 
+# Prompt
+brew 'starship'
+
 # Spatie Medialibrary
 brew 'jpegoptim'
 brew 'optipng'
@@ -28,12 +31,12 @@ brew 'php'
 brew 'neovim'
 
 # Apps
-cask 'caffeine'
 cask 'discord'
 cask 'figma'
 cask 'firefox'
 cask 'github'
 cask 'orbstack'
+cask 'rectangle'
 cask 'jetbrains-toolbox'
 cask 'hammerspoon'
 cask 'imageoptim'

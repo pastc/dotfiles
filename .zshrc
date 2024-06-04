@@ -1,16 +1,12 @@
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
-ZSH_CUSTOM=$DOTFILES
+source $DOTFILES/aliases.zsh
 
 # Use Starship
 eval "$(starship init zsh)"
 
 # User configuration
-
-# You may need to manually set your language environment
-export LC_ALL=en_JP.UTF-8
-export LANG=en_JP.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -21,3 +17,11 @@ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
