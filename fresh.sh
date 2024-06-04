@@ -2,12 +2,6 @@
 
 echo "Setting up your Mac..."
 
-# Install updates
-sudo softwareupdate -i -a
-
-# Install the Xcode Command Line Tools
-xcode-select --install
-
 # Check for Starship and install if we don't have it
 if test ! $(which starship); then
   /bin/sh -c "$(curl -fsSL https://starship.rs/install.sh)"
