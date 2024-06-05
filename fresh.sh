@@ -38,7 +38,6 @@ ln -sw $HOME/.dotfiles/config $HOME/.config
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
 # Set Keka as the default compression application
