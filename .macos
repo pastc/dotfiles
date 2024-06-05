@@ -123,9 +123,9 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 ###############################################################################
 
 # Trackpad: enable tap to click for this user and for the login screen
-# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Trackpad: map bottom right corner to right-click
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -823,28 +823,31 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
 
 ###############################################################################
-# SizeUp.app                                                                  #
+# AltTab.app                                                                  #
 ###############################################################################
 
-# Start SizeUp at login
-# defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
+# Set command as hold shortcut key
+defaults write com.lwouis.alt-tab-macos holdShortcut -string "\\U2318"
 
-# Don’t show the preferences window on next start
-# defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
-
-###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Install Sublime Text settings
-# cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+# Hide menubar icon
+defaults write com.lwouis.alt-tab-macos menubarIcon -int 3;
 
 ###############################################################################
-# Spectacle.app                                                               #
+# Amphetamine.app                                                             #
 ###############################################################################
 
-# Set up my preferred keyboard shortcuts
-# cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+# Start session at launch
+defaults write com.if.Amphetamine "Start Session At Launch" -int 1 
+
+# Allow display sleep when screen is locked
+defaults write com.if.Amphetamine "Allow Display Sleep When Screen Is Locked" -int 1
+
+###############################################################################
+# Jetbrains Toolbox.app                                                       #
+###############################################################################
+
+# Set tool installation location to ~/Application
+defaults write com.jetbrains.toolbox NSNavLastRootDirectory -string "/Applications"
 
 ###############################################################################
 # Transmission.app                                                            #

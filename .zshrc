@@ -2,6 +2,7 @@
 export DOTFILES=$HOME/.dotfiles
 
 source $DOTFILES/aliases.zsh
+source $DOTFILES/path.zsh
 
 # Use Starship
 eval "$(starship init zsh)"
