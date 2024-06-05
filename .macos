@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Thanks to Mathias Bynens!
 # ~/.macos — https://mths.be/macos
@@ -829,7 +829,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 # Set command as hold shortcut key
-new_shortcut=$'\u2318'
+new_shortcut=$'\xe2\x8c\x98'
 defaults write com.lwouis.alt-tab-macos holdShortcut -string "$new_shortcut"
 
 # Hide menubar icon
