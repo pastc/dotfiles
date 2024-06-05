@@ -15,6 +15,7 @@ brew 'httpie'
 brew 'jq' # Used for spatie/visit
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
+brew 'dockutil'
 
 # Prompt
 brew 'starship'
