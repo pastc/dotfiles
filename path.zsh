@@ -8,6 +8,8 @@ add_to_path() {
 # Load Jetbrains IDE
 add_to_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
+add_to_path "$HOME/go/bin"
+
 ## Load dotfiles binaries
 #add_to_path "$DOTFILES/bin"
 #

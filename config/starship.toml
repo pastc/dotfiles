@@ -1,12 +1,12 @@
 palette = "catppuccin_macchiato"
 
 [character]
-success_symbol = "[❯](yellow)"
+success_symbol = "[❯](peach)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 vimcmd_replace_one_symbol = "[❮](mauve)"
 vimcmd_replace_symbol = "[❮](mauve)"
-vimcmd_visual_symbol = "[❮](yellow)"
+vimcmd_visual_symbol = "[❮](mauve)"
 
 [directory]
 read_only = " 󰌾"
