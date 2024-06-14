@@ -43,6 +43,7 @@ cask 'telegram-desktop'
 cask 'keka'
 cask 'kekaexternalhelper'
 cask 'visual-studio-code'
+cask 'zed'
 
 # Quicklook
 # cask 'qlmarkdown'
