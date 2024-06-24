@@ -4,3 +4,5 @@
 
 [github]
 	user = pastc
+[init]
+	defaultBranch = main

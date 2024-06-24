@@ -1,27 +1,17 @@
 palette = "catppuccin_macchiato"
 
 [character]
-success_symbol = "[>](peach)"
-error_symbol = "[>](red)"
-vimcmd_symbol = "[<](green)"
-vimcmd_replace_one_symbol = "[<](mauve)"
-vimcmd_replace_symbol = "[<](mauve)"
-vimcmd_visual_symbol = "[<](mauve)"
+success_symbol = "[❯](red)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
 
 [directory]
 read_only = " ro"
 truncation_length = 4
-style = "bold peach"
+style = "bold red"
 
 [git_commit]
 tag_symbol = " tag "
-
-[git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
 
 [aws]
 symbol = "aws "

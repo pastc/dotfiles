@@ -27,4 +27,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+export TINYTEX_INSTALLER=TinyTeX-2
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
