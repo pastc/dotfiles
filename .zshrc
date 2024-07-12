@@ -30,3 +30,14 @@ esac
 export TINYTEX_INSTALLER=TinyTeX-2
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# bun completions
+[ -s "/Users/acacia/.bun/_bun" ] && source "/Users/acacia/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Created by `pipx` on 2024-07-01 18:16:14
+export PATH="$PATH:/Users/acacia/.local/bin"
